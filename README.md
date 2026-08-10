@@ -20,7 +20,7 @@ This application demonstrates how to use Abstraxion's SignerMode in a Node.js ba
 
 ## Prerequisites
 
-- Node.js 18+
+- Node.js 24+
 - pnpm (package manager)
 
 ## Setup
