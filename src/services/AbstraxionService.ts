@@ -4,10 +4,12 @@
  * Handles SignerController lifecycle and provides simplified API
  */
 
-import { SignerController } from "@burnt-labs/abstraxion/src/controllers";
+import {
+  SignerController,
+  normalizeAbstraxionConfig,
+  type AbstraxionConfig,
+} from "@burnt-labs/abstraxion-js";
 import { AbstraxionAuth } from "@burnt-labs/abstraxion-core";
-import { normalizeAbstraxionConfig } from "@burnt-labs/abstraxion/src/utils/normalizeAbstraxionConfig";
-import type { AbstraxionConfig } from "@burnt-labs/abstraxion/src/types";
 import type {
   StorageStrategy,
   RedirectStrategy,
