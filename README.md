@@ -34,10 +34,11 @@ pnpm install
 1. Set required environment variables:
 
 ```bash
-export CHECKSUM="your-smart-account-contract-checksum"
 export FEE_GRANTER_ADDRESS="xion1..."
-export CODE_ID="1"  # Optional, defaults to 1
 ```
+
+Smart-account addresses come from the AA API (`AA_API_URL`), so no contract
+checksum or code ID is configured.
 
 1. Run the application:
 
@@ -55,8 +56,6 @@ The app uses the following environment variables:
 - `GAS_PRICE`: Gas price (default: `0.001uxion`)
 - `AA_API_URL`: Account Abstraction API URL
 - `FEE_GRANTER_ADDRESS`: Fee granter address (required)
-- `CHECKSUM`: Smart account contract checksum (required)
-- `CODE_ID`: Smart account contract code ID (optional)
 - `TREASURY_ADDRESS`: Treasury contract address (optional)
 
 ## Architecture
@@ -106,8 +105,6 @@ const abstraxionService = new AbstraxionService(
     chainId: "xion-testnet-2",
     aaApiUrl: "https://aa-api.xion-testnet-2.burnt.com",
     smartAccountContract: {
-      codeId: 1,
-      checksum: "your-checksum",
       addressPrefix: "xion",
     },
     getSignerConfig: () => walletService.getSignerConfig("user-123"),

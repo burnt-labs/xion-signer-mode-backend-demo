@@ -49,20 +49,20 @@ importers:
   .:
     dependencies:
       '@burnt-labs/abstraxion-core':
-        specifier: ^1.0.0-alpha.73
-        version: 1.0.0-alpha.73
+        specifier: 1.0.0-alpha.74
+        version: 1.0.0-alpha.74
       '@burnt-labs/abstraxion-js':
-        specifier: ^1.0.0-alpha.3
-        version: 1.0.0-alpha.3(@cosmjs/tendermint-rpc@0.36.2)
+        specifier: 1.0.0-alpha.4
+        version: 1.0.0-alpha.4(@cosmjs/tendermint-rpc@0.36.2)
       '@burnt-labs/account-management':
-        specifier: ^1.0.0-alpha.14
-        version: 1.0.0-alpha.14(@cosmjs/tendermint-rpc@0.36.2)
+        specifier: 1.0.0-alpha.15
+        version: 1.0.0-alpha.15(@cosmjs/tendermint-rpc@0.36.2)
       '@burnt-labs/constants':
         specifier: ^0.1.0-alpha.25
         version: 0.1.0-alpha.25
       '@burnt-labs/signers':
-        specifier: ^1.0.0-alpha.11
-        version: 1.0.0-alpha.11
+        specifier: 1.0.0-alpha.12
+        version: 1.0.0-alpha.12
       viem:
         specifier: ^2.38.5
         version: 2.45.0(typescript@5.9.3)
@@ -205,23 +205,23 @@ packages:
   '@bufbuild/protobuf@2.13.0':
     resolution: {integrity: sha512-acq7c49vxfm1ggJ95P70TX7ABDM0vxr1SYD3BB0o0jnBLB4OAqeHyKuN+cD3w80gXEDQ2zxHpR6CUeA+O/aU9g==}
 
-  '@burnt-labs/abstraxion-core@1.0.0-alpha.73':
-    resolution: {integrity: sha512-kNfN2gFZMf/tFNEKADomDq9DU3sBhg5N0yN0ySj7lJ5rPJDrrSrRY6ZRg7onx165lL9Eh/oOMjg7Q3vgs4qhxw==}
+  '@burnt-labs/abstraxion-core@1.0.0-alpha.74':
+    resolution: {integrity: sha512-xI3sqBUQtfzcYkCjefMI6JwDYMLPdJzc+68BIKeHzbQ17uiXzKAp0lFYLWl7BQ4UYGGgushHXx2YxBpQMFmvZw==}
     peerDependencies:
       react-native-get-random-values: ^1.11.0
       react-native-quick-crypto: ^0.7.0
 
-  '@burnt-labs/abstraxion-js@1.0.0-alpha.3':
-    resolution: {integrity: sha512-Ae7ER778/+tBNevyEV3H79cpNrQtWagszRLSzfu4n4+yVh2wJcMiS0sOiiRm2s+ZwVNwwD1IlvDwiNXOpNhn2w==}
+  '@burnt-labs/abstraxion-js@1.0.0-alpha.4':
+    resolution: {integrity: sha512-QyeANGEfdMEAQ1GaO/eY8jODeiD3eV9JkXu2Ynw3T2X5Z7XGSQhYmdTl7Rb5YGIJahwXqDcmc6QQ0y6Pd/Ae0g==}
 
-  '@burnt-labs/account-management@1.0.0-alpha.14':
-    resolution: {integrity: sha512-4QfpYtYx3cbNfWjpILuOulqJayb9UbvSNL3qAlVUEoTGXX72R+/7KpKy1T6+mYUVEI0zBMtxtcHCpcf8TY9ReA==}
+  '@burnt-labs/account-management@1.0.0-alpha.15':
+    resolution: {integrity: sha512-/YguLyr4GR0pUTWfnkRst5eS7bMHFoWQaWfqdXpvnoEkmck2sh0C9IkcvyOOGxeGwyyg0Lk/ud7+/UJmqWLh/g==}
 
   '@burnt-labs/constants@0.1.0-alpha.25':
     resolution: {integrity: sha512-933OX/ITJTTr2KZ5SFkS5B4tKTg7Lj///Rvht9+Jw9/qmZsT7NUGr2Q7uCl+/ud+uGhJTR3NCNcOnl4iE6dddQ==}
 
-  '@burnt-labs/signers@1.0.0-alpha.11':
-    resolution: {integrity: sha512-sileh98HUB0ZGHgwDy8uUs2D+4AsXzJp2zxM1LJeHfKMLGZOcdBACOHezghVQkuhQC8BKM+Q+vmKtzuHVyYHmw==}
+  '@burnt-labs/signers@1.0.0-alpha.12':
+    resolution: {integrity: sha512-so6lCdX6HucJW2uXBIOATc1WpNErlxe8s4BkPcqmPWvQ5IpLBwFk2icLcH6bvDp30wAh9Pn2ZvznSjryKGNtzA==}
 
   '@burnt-labs/xion-types@30.0.0-rc1':
     resolution: {integrity: sha512-eCgjvO6BQeMtSCpKdocrR2cxYRVfKh+lSOP58CviJKWBmiw6V5WkXFQvZwMxne/mNw2y3bB4/f2zKyYqGPNJQQ==}
@@ -2471,10 +2471,10 @@ snapshots:
 
   '@bufbuild/protobuf@2.13.0': {}
 
-  '@burnt-labs/abstraxion-core@1.0.0-alpha.73':
+  '@burnt-labs/abstraxion-core@1.0.0-alpha.74':
     dependencies:
       '@burnt-labs/constants': 0.1.0-alpha.25
-      '@burnt-labs/signers': 1.0.0-alpha.11
+      '@burnt-labs/signers': 1.0.0-alpha.12
       '@burnt-labs/xion-types': 30.0.0-rc1(@cosmjs/proto-signing@0.36.2)(@cosmjs/stargate@0.36.2)(@cosmjs/tendermint-rpc@0.36.2)
       '@cosmjs/amino': 0.36.2
       '@cosmjs/cosmwasm-stargate': 0.36.2
@@ -2493,12 +2493,12 @@ snapshots:
       - google-protobuf
       - utf-8-validate
 
-  '@burnt-labs/abstraxion-js@1.0.0-alpha.3(@cosmjs/tendermint-rpc@0.36.2)':
+  '@burnt-labs/abstraxion-js@1.0.0-alpha.4(@cosmjs/tendermint-rpc@0.36.2)':
     dependencies:
-      '@burnt-labs/abstraxion-core': 1.0.0-alpha.73
-      '@burnt-labs/account-management': 1.0.0-alpha.14(@cosmjs/tendermint-rpc@0.36.2)
+      '@burnt-labs/abstraxion-core': 1.0.0-alpha.74
+      '@burnt-labs/account-management': 1.0.0-alpha.15(@cosmjs/tendermint-rpc@0.36.2)
       '@burnt-labs/constants': 0.1.0-alpha.25
-      '@burnt-labs/signers': 1.0.0-alpha.11
+      '@burnt-labs/signers': 1.0.0-alpha.12
       '@cosmjs/cosmwasm-stargate': 0.36.2
       '@cosmjs/proto-signing': 0.36.2
       '@cosmjs/stargate': 0.36.2
@@ -2510,13 +2510,14 @@ snapshots:
       - react-native-quick-crypto
       - utf-8-validate
 
-  '@burnt-labs/account-management@1.0.0-alpha.14(@cosmjs/tendermint-rpc@0.36.2)':
+  '@burnt-labs/account-management@1.0.0-alpha.15(@cosmjs/tendermint-rpc@0.36.2)':
     dependencies:
       '@braintree/sanitize-url': 7.1.1
-      '@burnt-labs/abstraxion-core': 1.0.0-alpha.73
-      '@burnt-labs/signers': 1.0.0-alpha.11
+      '@burnt-labs/abstraxion-core': 1.0.0-alpha.74
+      '@burnt-labs/signers': 1.0.0-alpha.12
       '@burnt-labs/xion-types': 30.0.0-rc1(@cosmjs/proto-signing@0.36.2)(@cosmjs/stargate@0.36.2)(@cosmjs/tendermint-rpc@0.36.2)
       '@cosmjs/cosmwasm-stargate': 0.36.2
+      '@cosmjs/encoding': 0.36.2
       '@cosmjs/proto-signing': 0.36.2
       '@cosmjs/stargate': 0.36.2
       camelcase-keys: 9.1.3
@@ -2531,7 +2532,7 @@ snapshots:
 
   '@burnt-labs/constants@0.1.0-alpha.25': {}
 
-  '@burnt-labs/signers@1.0.0-alpha.11':
+  '@burnt-labs/signers@1.0.0-alpha.12':
     dependencies:
       '@burnt-labs/constants': 0.1.0-alpha.25
       '@burnt-labs/xion-types': 30.0.0-rc1(@cosmjs/proto-signing@0.36.2)(@cosmjs/stargate@0.36.2)(@cosmjs/tendermint-rpc@0.36.2)
