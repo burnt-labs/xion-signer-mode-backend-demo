@@ -32,12 +32,12 @@ export interface AbstraxionServiceConfig {
   getSignerConfig: () => Promise<SignerConfig>;
 
   // Optional configuration
-  indexer?: {
-    type: "numia" | "subquery";
-    url: string;
-    authToken?: string; // Numia
-    codeId?: number; // Subquery
-  };
+  // DaoDao: url is the indexer base (e.g. https://daodaoindexer.burnt.com),
+  // chainId scopes the path (e.g. xion-mainnet-1). Subquery derives codeId
+  // from smartAccountContract.
+  indexer?:
+    | { type: "daodao"; url: string; chainId: string }
+    | { type: "subquery"; url: string };
   treasuryIndexer?: {
     url: string;
   };
