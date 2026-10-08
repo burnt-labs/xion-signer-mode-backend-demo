@@ -12,8 +12,6 @@ export interface AppConfig {
   feeGranter?: string;
   treasury?: string;
   smartAccountContract: {
-    codeId: number;
-    checksum: string;
     addressPrefix: string;
   };
 }
@@ -36,11 +34,9 @@ export const defaultConfig: AppConfig = {
     "https://aa-api.xion-testnet-2.burnt.com",
   feeGranter: process.env.FEE_GRANTER_ADDRESS,
   treasury: process.env.TREASURY_ADDRESS,
+  // Smart-account addresses come from the AA API, so no checksum or code ID
+  // is configured here.
   smartAccountContract: {
-    codeId: process.env.CODE_ID
-      ? parseInt(process.env.CODE_ID)
-      : 1, // Default code ID, should be overridden
-    checksum: process.env.CHECKSUM || "", // Must be provided
     addressPrefix: process.env.ADDRESS_PREFIX || "xion",
   },
 };
@@ -49,12 +45,6 @@ export const defaultConfig: AppConfig = {
  * Validate that required configuration is present
  */
 export function validateConfig(config: AppConfig): void {
-  if (!config.smartAccountContract.checksum) {
-    throw new Error(
-      "CHECKSUM environment variable is required for smart account contract",
-    );
-  }
-
   if (!config.feeGranter) {
     throw new Error(
       "FEE_GRANTER_ADDRESS environment variable is required for signer mode",

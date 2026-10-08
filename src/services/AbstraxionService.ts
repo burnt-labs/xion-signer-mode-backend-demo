@@ -27,8 +27,6 @@ export interface AbstraxionServiceConfig {
   // Signer configuration
   aaApiUrl: string;
   smartAccountContract: {
-    codeId: number;
-    checksum: string;
     addressPrefix?: string;
   };
   getSignerConfig: () => Promise<SignerConfig>;
@@ -97,9 +95,11 @@ export class AbstraxionService {
         type: "signer",
         aaApiUrl: this.config.aaApiUrl,
         getSignerConfig: this.config.getSignerConfig,
+        // The AA API picks the account contract and returns its address. The
+        // SDK type still requires codeId, but signer mode never reads it when
+        // smartAccountContract is set.
         smartAccountContract: {
-          codeId: this.config.smartAccountContract.codeId,
-          checksum: this.config.smartAccountContract.checksum,
+          codeId: 1,
           addressPrefix:
             this.config.smartAccountContract.addressPrefix || "xion",
         },
