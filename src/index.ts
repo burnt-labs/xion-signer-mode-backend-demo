@@ -20,9 +20,7 @@ async function main() {
     console.error(
       "\nPlease set the following environment variables:",
     );
-    console.error("  - CHECKSUM: Smart account contract checksum");
     console.error("  - FEE_GRANTER_ADDRESS: Fee granter address");
-    console.error("  - CODE_ID: Smart account contract code ID (optional, defaults to 1)");
     process.exit(1);
   }
 
